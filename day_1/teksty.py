@@ -50,3 +50,30 @@ print(encode_s)  # b'Witaj \xc5\x9awiecie', b - typ bajtowy
 print(type(encode_s))  # <class 'bytes'>
 # \xc5\x9a, \x liczba w sytemie szesnastkowym -> \xc5 - 197
 print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+imie = "Radek"
+# f - fstring - tekst sforamtowany
+tekst_format = f"Mam na imię {imie} i lubię pythona"
+print(tekst_format)  # Mam na imię Radek i lubię pythona
+tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format)
+# "	 Mam na imię Radek
+#  i lubię pythona"
+# \t tabulator
+# \n - nowa linia
+# \b - backspace
+
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # Witaj Radek! pod %s wstawiona zostanie wartość zmiennej imie
+
+print("Witaj {}".format(imie))  # Witaj Radek
+
+print("Witaj", imie)  # Witaj Radek
+
+print("""
+Tekst 
+    wielolinijkowy
+""")
+# "Tekst
+#     wielolinijkowy"
+# ctrl / - komentarz zaznaczonego fragmentu
