@@ -41,4 +41,21 @@ print(f"Uzywamy wersji pythona {wersja}")  # Uzywamy wersji pythona 3.90001
 print(f"Uzywamy wersji pythona {wersja:.1f}")  # Uzywamy wersji pythona 3.9
 print(f"Uzywamy wersji pythona {wersja:.2f}")  # Uzywamy wersji pythona 3.90
 print(f"Uzywamy wersji pythona {wersja:.0f}")  # Uzywamy wersji pythona 4
-print(f"Uzywamy wersji pythona {wersja:.f}")  # ValueError: Format specifier missing precision
+# print(f"Uzywamy wersji pythona {wersja:.f}")  # ValueError: Format specifier missing precision
+user = "Tomek"
+print(f"{user:>10}")  # "     Tomek"
+print(f"{user:<15}")  # "Tomek          "
+print(f"{user:^20}")  # "       Tomek        "  razem 20 znaków
+
+print(liczba)  # 5678907654321
+print(f"Nasza duża liczba {liczba:,}")  # Nasza duża liczba 5,678,907,654,321
+print(f"Nasza duża liczba {liczba:_}")  # Nasza duża liczba 5_678_907_654_321
+print(f"Nasza duża liczba {liczba:_}".replace("_", "."))  # Nasza duża liczba 5.678.907.654.321
+print(f"Nasza duża liczba {liczba:_}".replace("_", " "))  # Nasza duża liczba 5 678 907 654 321
+
+# liczba_2 = 150000000000
+liczba_2 = 150_000_000_000
+print(liczba_2)
+print(type(liczba_2))
+# 150000000000
+# <class 'int'>
