@@ -43,5 +43,10 @@ print(tekst.removesuffix("Świecie"))  # "Witaj "
 print(tekst.removesuffix("Świecie").strip())  # "Witaj"
 print(tekst.removesuffix("Witaj").strip())  # "Witaj Świecie"
 
-print(tekst[4]) # indeks numer 4
+print(tekst[4])  # indeks numer 4, j
 
+encode_s = tekst.encode('utf-8')
+print(encode_s)  # b'Witaj \xc5\x9awiecie', b - typ bajtowy
+print(type(encode_s))  # <class 'bytes'>
+# \xc5\x9a, \x liczba w sytemie szesnastkowym -> \xc5 - 197
+print(encode_s.decode('utf-8'))  # Witaj Świecie
