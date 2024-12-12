@@ -70,7 +70,7 @@ else:  # w przeciwnym wypadku
 
 punkty = 0
 odp = input("Podaj rok Bitwy pod Grunwaldem")  # str
-if odp == '1410'.strip():
+if odp.strip() == '1410':
     print("Zdałeś")
     punkty += 1  # punkty = punkty + 1
 else:
