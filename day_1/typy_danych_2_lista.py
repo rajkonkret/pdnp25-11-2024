@@ -83,3 +83,21 @@ print(lista)  # ['Radek', 'Grzegorz', 'Maciek', 'Mikołaj', 'Zośka', 'Zenek', '
 # dopisanie lementu do listy we wskazanym indeksie
 lista.insert(1, "Marek")
 print(lista)  # ['Radek', 'Marek', 'Grzegorz', 'Maciek', 'Mikołaj', 'Zośka', 'Zenek', 'Dariusz']
+
+# sprawdzenie indeksu dla elementu, pierwsze wystąpienie
+print(lista.index("Zenek"))  # indeks numer 6
+
+# usunięcie elemntu z listy, pierwsze wystąpienie
+lista.append("Zenek")  # dodanie na końcu
+print(lista)
+# ['Radek', 'Marek', 'Grzegorz', 'Maciek', 'Mikołaj', 'Zośka', 'Zenek', 'Dariusz', 'Zenek']
+lista.remove("Zenek")  # remove() - usnięcie Zenek,
+print(lista)  # ['Radek', 'Marek', 'Grzegorz', 'Maciek', 'Mikołaj', 'Zośka', 'Dariusz', 'Zenek']
+
+# usunięcie z listy po indeksie, zwraca co usunęło
+print(lista.pop(5))  # Zośka
+print(lista)
+# ['Radek', 'Marek', 'Grzegorz', 'Maciek', 'Mikołaj', 'Dariusz', 'Zenek']
+print(lista.pop(-2))  # Dariusz
+print(lista.pop())  # Zenek, ostatni element
+print(lista)  # ['Radek', 'Marek', 'Grzegorz', 'Maciek', 'Mikołaj']
