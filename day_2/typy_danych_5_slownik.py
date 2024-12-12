@@ -59,3 +59,20 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 7}
 # # Podaj pierwszą liczbę6
 # # Podaj drugą liczbę8
 # # 14.0
+
+# napisac aplikację pol-ang
+# słownik ze słowkami i tłuamczeniami
+# pobrac od uzytkownika o co pyta -> input
+# wyswietlic tłumaczenie -> wartość klucza
+pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
+print("Mamy takie słówka", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia: ")
+# print(pol_ang[odp.lower()])
+# # ß - ss
+# print(pol_ang[odp.casefold()])
+print(f'Tłumaczenie {odp} : {pol_ang.get(odp.casefold().strip(), "Nie mo ;)")}')
+# Mamy takie słówka dict_keys(['kot', 'pies', 'dach'])
+# Podaj słówko do przetłumaczenia:  Kot
+# Tłumaczenie  Kot : cat
+#
+# Process finished with exit code 0
