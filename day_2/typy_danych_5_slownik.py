@@ -41,3 +41,21 @@ print(dictionary)  # {'imie': 'Tomek', 'wiek': '45', 'date': '12-12-2024'}
 dict_small = {"x": 2}
 dict_small.update([('y', 3), ("z", 7)])
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 7}
+
+# input() - pobiera dane od użytkownika
+# tekst = input("Podaj imię") # input zwraca <class 'str'>
+# print(tekst)
+# # Podaj imięRaadek
+# # Raadek
+# print(type(tekst))
+
+# napisać aplikację kalkulator
+# pobrac dwie liczby -> 2 x input
+# wypisac wynik dodawanie -> print
+
+# a = int(input("Podaj pierwszą liczbę"))
+# b = input("Podaj drugą liczbę")
+# print(a + float(b))
+# # Podaj pierwszą liczbę6
+# # Podaj drugą liczbę8
+# # 14.0
