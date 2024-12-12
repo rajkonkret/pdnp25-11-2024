@@ -101,3 +101,78 @@ print(lista)
 print(lista.pop(-2))  # Dariusz
 print(lista.pop())  # Zenek, ostatni element
 print(lista)  # ['Radek', 'Marek', 'Grzegorz', 'Maciek', 'Mikołaj']
+
+a = 1
+b = 3
+print(a, b)
+a = b
+print(a, b)  # 3 3
+
+b = 7
+print(f"{a=}, {b=}")  # a=3, b=7
+
+lista_2 = lista  # kopiaa adresu w pamięci, referencji
+print(lista)
+print(lista_2)
+lista_copy = lista.copy()  # kopia elementów listy do nowej listy
+lista.clear()  # czysczenie elementów listy
+print(lista)
+print(lista_2)
+print(lista_copy)  # ['Radek', 'Marek', 'Grzegorz', 'Maciek', 'Mikołaj']
+# []
+# []
+print(id(lista_2))
+print(id(lista))
+print(id(lista_copy))
+# 3116649914432
+# 3116649914432
+# 3116652887488
+
+liczby = [54, 999, 34, 22, 12.34, 687]
+print(liczby)  # [54, 999, 34, 22, 12.34, 687]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)  # [12.34, 22, 34, 54, 687, 999]
+
+liczby = [54, 999, 34, 22, 12.34, 687, "A"]
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort() # TypeError: '<' not supported between instances of 'str' and 'int'
+lista_litery = ["b", 'a', "z", 'w']
+lista_litery.sort()
+print(lista_litery)  # ['a', 'b', 'w', 'z']
+
+lista_litery.reverse()  # odwróćenie listy
+print(lista_litery)  # ['z', 'w', 'b', 'a']
+
+# sortowanie z odróceniem
+lista_litery.sort(reverse=True)
+print(lista_litery)  # ['z', 'w', 'b', 'a']
+print(lista_litery[::-1])  # ['a', 'b', 'w', 'z'], od tyłu, samo wyświetlanie
+
+liczby[3] = 666
+print(liczby[0:3])
+print(liczby[-2])
+print(liczby)
+
+print(liczby.pop(2)) # 34
+liczby.remove(54)
+print(liczby)
+
+del liczby
+# print(liczby) # NameError: name 'liczby' is not defined
+
+# rozpakowanie sekwencji
+tekst = "Pyt hon."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', ' ', 'h', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2) # ['Pyt hon.']
+
+krotka = tuple(lista_litery)
+print(krotka)
+print(type(krotka))
+# ('z', 'w', 'b', 'a')
+# <class 'tuple'>
