@@ -43,3 +43,10 @@ cz2.powitanie()
 cz1.powitanie()
 # Mam na imię Radek
 # Mam na imię Anna
+
+lista = [cz1, cz2]
+for i in lista:
+    i.powitanie()
+
+# Mam na imię Anna
+# Mam na imię Radek
