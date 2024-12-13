@@ -68,20 +68,38 @@ else:  # w przeciwnym wypadku
 # pobrac odpowiedz od uzytkownika
 # wypisac wynik
 
-punkty = 0
-odp = input("Podaj rok Bitwy pod Grunwaldem")  # str
-if odp.strip() == '1410':
-    print("Zdałeś")
-    punkty += 1  # punkty = punkty + 1
+# punkty = 0
+# odp = input("Podaj rok Bitwy pod Grunwaldem")  # str
+# if odp.strip() == '1410':
+#     print("Zdałeś")
+#     punkty += 1  # punkty = punkty + 1
+# else:
+#     print("Musisz uczyć się dalej")
+# # Podaj rok Bitwy pod Grunwaldem1410
+# # Zdałeś
+# # Podaj rok Bitwy pod Grunwaldem1000
+# # Musisz uczyć się dalej
+# # spam += 1    spam = spam + 1
+# # spam -= 1    spam = spam - 1
+# # spam *= 1    spam = spam * 1
+# # spam /= 1    spam = spam / 1
+# # spam %= 1    spam = spam % 1
+# print(f"Zdobyłeś {punkty} punkty.")
+
+suma_zam = 150
+if suma_zam > 100:
+    rabacik = 25
 else:
-    print("Musisz uczyć się dalej")
-# Podaj rok Bitwy pod Grunwaldem1410
-# Zdałeś
-# Podaj rok Bitwy pod Grunwaldem1000
-# Musisz uczyć się dalej
-# spam += 1    spam = spam + 1
-# spam -= 1    spam = spam - 1
-# spam *= 1    spam = spam * 1
-# spam /= 1    spam = spam / 1
-# spam %= 1    spam = spam % 1
-print(f"Zdobyłeś {punkty} punkty.")
+    rabacik = 0
+
+print(f"Rabat wynosi {rabacik}")  # Rabat wynosi 25
+# ctrl / - komentarz
+
+rabat = 25 if suma_zam > 100 else 0
+print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
+
+if odp == "Radek":  # == porównanie
+    if suma_zam > 50:
+        rabat = 200
+
+print(f"Rabat wynosi {rabat}")  # Rabat wynosi 200
